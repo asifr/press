@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	/* Color scheme */
+
+	--textcolor: #121212;
+	--bgcolor: #fff;
+	--highlight: #2749c9;
+
+}
+
+@media (prefers-color-scheme: dark) {
+	* {
+		--textcolor: #121212;
+		--bgcolor: rgb(245, 239, 235);
+		--highlight: #2749c9;
+	}
+}
+
+body {
+	font-size: 18px;
+	font-family: system-ui, sans-serif;
+	line-height: 1.45;
+	color: var(--textcolor);
+	background: var(--bgcolor);
+	position: relative;
+	max-width: 64em;
+	/* remove this for a full-width layout */
+	margin: 0 auto;
+	/* centers the layout */
+}
+
+@media only screen and (max-width: 680px) {
+
+	/* smaller screens */
+	body {
+		font-size: 16px;
+	}
+}
+
